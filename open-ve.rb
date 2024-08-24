@@ -5,22 +5,22 @@
 class OpenVe < Formula
   desc "Open-VE: A powerful solution that simplifies the management of validation rules, ensuring consistent validation across all layers, including frontend, BFF, and microservices, through a single, simple API."
   homepage ""
-  version "1.2-alpha"
+  version "1.3-alpha"
 
   depends_on "go" => :optional
 
   on_macos do
     on_intel do
-      url "https://github.com/shibukazu/open-ve/releases/download/v1.2-alpha/open-ve_Darwin_x86_64.tar.gz"
-      sha256 "7ff732fb41d0ef3ba8078690bd842361de690282adc35c6e6698df4803c74ba0"
+      url "https://github.com/shibukazu/open-ve/releases/download/v1.3-alpha/open-ve_Darwin_x86_64.tar.gz"
+      sha256 "6e992650efa89fe34de63460c433c797b3b64aa320685a3cd0552bea5eab3e37"
 
       def install
         bin.install "open-ve"
       end
     end
     on_arm do
-      url "https://github.com/shibukazu/open-ve/releases/download/v1.2-alpha/open-ve_Darwin_arm64.tar.gz"
-      sha256 "f2c4fcc4215971411ba74f063c1c446e5a171377469223a273278c1449f4808a"
+      url "https://github.com/shibukazu/open-ve/releases/download/v1.3-alpha/open-ve_Darwin_arm64.tar.gz"
+      sha256 "7cb6dd024d58d859cad59394106db7bdd4c919f040d0443ba36f5149e6888c95"
 
       def install
         bin.install "open-ve"
@@ -31,8 +31,8 @@ class OpenVe < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/shibukazu/open-ve/releases/download/v1.2-alpha/open-ve_Linux_x86_64.tar.gz"
-        sha256 "f91f72f71f9528153bc60573fdeb22ba987dabdfa07be93eb984db4e48ac353b"
+        url "https://github.com/shibukazu/open-ve/releases/download/v1.3-alpha/open-ve_Linux_x86_64.tar.gz"
+        sha256 "3d97ac1418e0f5056d126714a12a2d35000c7d234c5acbc6b5bc91384aaab224"
 
         def install
           bin.install "open-ve"
@@ -41,8 +41,8 @@ class OpenVe < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/shibukazu/open-ve/releases/download/v1.2-alpha/open-ve_Linux_arm64.tar.gz"
-        sha256 "176913caf7ccbfbf34ecfb10537739267db02c48a174ea74f90220cadb675031"
+        url "https://github.com/shibukazu/open-ve/releases/download/v1.3-alpha/open-ve_Linux_arm64.tar.gz"
+        sha256 "173ad4d17e08290478f077f63549fdf7a9b78cd2ebc4c2196c7eaedd656b8435"
 
         def install
           bin.install "open-ve"
